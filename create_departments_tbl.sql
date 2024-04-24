@@ -1,0 +1,1 @@
+CREATE TABLE `dbmmg0uiglv2cg`.`DEPARTMENTS` ( `department_id` INT NOT NULL AUTO_INCREMENT , `department_name` VARCHAR(50) NULL , `num_of_employees` VARCHAR(50) NULL , `building_number` VARCHAR(50) NULL , `create_date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP , `last_login` DATETIME NULL , PRIMARY KEY (`department_id`)) ENGINE = InnoDB;

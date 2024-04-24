@@ -1,0 +1,1 @@
+INSERT INTO `USER` (`user_id`, `email_address`, `password`, `first_name`, `last_name`, `create_date`, `last_login`) VALUES (NULL, 'alex@gmail.com', '123456', 'Alex', 'Green', CURRENT_TIMESTAMP, '2024-04-10 11:38:37'), (NULL, 'clark@dailyplanet.com', '456789', 'Clark', 'Kent', CURRENT_TIMESTAMP, '2024-04-10 11:38:37');

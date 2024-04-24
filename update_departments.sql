@@ -1,0 +1,1 @@
+UPDATE DEPARTMENTS SET department_name = 'Ministry of Snacks', num_of_employees = 100, building_number = '10', status = 'I' WHERE department_id = 1

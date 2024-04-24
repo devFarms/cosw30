@@ -1,0 +1,1 @@
+CREATE TABLE `dbmmg0uiglv2cg`.`USER` ( `user_id` INT NOT NULL AUTO_INCREMENT , `email_address` VARCHAR(50) NULL , `password` VARCHAR(50) NULL , `first_name` VARCHAR(50) NULL , `last_name` VARCHAR(50) NULL , `create_date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP , `last_login` DATETIME NULL , PRIMARY KEY (`user_id`)) ENGINE = InnoDB;
