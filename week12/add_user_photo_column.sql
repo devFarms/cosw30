@@ -1,0 +1,2 @@
+
+ALTER TABLE `BLOG_USERS_TBL` ADD `user_photo` VARCHAR(50) NULL AFTER `status`;
