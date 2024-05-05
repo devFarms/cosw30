@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $email_address = $_POST['email_address'];
         $password = $_POST['password'];
         $role = $_POST['role'];
+        $user_photo = $_POST['user_photo'];
         $status = $_POST['status'];
 
         $update_query = 
@@ -22,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             email_address = '$email_address',
             password = '$password',
             role = '$role',
+            user_photo = '$user_photo',
             status = '$status' 
             WHERE user_id = $user_id";
 
@@ -29,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             
             $update_result = mysqli_query($connection, $update_query);
             if ($update_result){
-                echo '<p>This User has been updated, <a href="user.php?id=' . $post_id . '">please review</a> or go to the <a href="list_users.php">user list</a> page.</p>';
+                echo '<p>This User has been updated, <a href="user.php?id=' . $user_id . '">please review</a> or go to the <a href="list_users.php">user list</a> page.</p>';
                 exit;
             } else {
                 echo "Failed";
@@ -64,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <p>Last Name: <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>" required></p>
         <p>Email Address: <input type="text" name="email_address" value="<?php echo $row['email_address']; ?>" required></p>
         <p>Password: <input type="text" name="password" value="<?php echo $row['password']; ?>" required></p>
-        <p>Profile Picture: <input type="text" name="user_photo" value="<?php echo $row['user_photo']; ?>" required></p>
+        <p>Profile Picture: <input type="text" name="user_photo" value="<?php echo $row['user_photo']; ?>"></p>
         <p>Role: <select id="role" name="role" required>
             <option value="<?php echo $row['role']; ?>" default><?php echo $row['role']; ?></option>
             <option value="Admin">Admin</option>
